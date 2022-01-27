@@ -15,6 +15,11 @@ class CreateLeaderTable extends Migration
     {
         Schema::create('leader', function (Blueprint $table) {
             $table->id();
+
+            $table->string('name');
+            $table->string('surname');
+            $table->tinyInteger('age');
+
             $table->timestamps();
         });
     }
